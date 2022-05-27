@@ -6,15 +6,13 @@ import com.example.helpers.Attach;
 import com.example.pages.RegistrationFormPage;
 import com.example.utils.RandomDataGenerator;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static io.qameta.allure.Allure.step;
 
+@Tag("Jenkins")
 public class RegistrationFormWithPageObjectsTests {
     RandomDataGenerator generator = new RandomDataGenerator();
     RegistrationFormPage registrationFormPage = new RegistrationFormPage();
